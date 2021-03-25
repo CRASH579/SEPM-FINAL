@@ -31,10 +31,44 @@
                     <li class="nav-item"> <a class="nav-link" href=""><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"> <a class="nav-link" href="contactus.html"><span class="fa fa-address-book fa-lg"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text login-mo">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+
+                    </a>
+                </span>
             </div>
         </div>
 
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dailog">
+
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="post">
+                        <label for="in">Email</label>
+                        <br>
+                        <input type="email" placeholder="xyz@abc.com">
+                        <br>
+                        <label for="pass">Password</label>
+                        <br>
+                        <input type="password">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <header class="jumbotron">
         <div class="container" style="margin-left: 30px;margin-right: 0px;">
             <div class="row row-header">
@@ -46,7 +80,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
 
-                <div class="col-6 col-sm-2 order-last btn btn-warning align-self-center">RESERVE</div>
+                <div class="col-6 col-sm-2 order-last btn btn-warning align-self-center" role="button" data-toggle="tooltip" data-html="true" title="Or Call Us At <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">RESERVE TABLE</div>
 
             </div>
         </div>
@@ -101,7 +135,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid row-content" id="saurav">
+    <div class="container-fluid row-content" >
         <div class="col-md-3"></div>
         <div class="col-12 offset-sm-2 col-sm-8">
 
@@ -195,6 +229,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
