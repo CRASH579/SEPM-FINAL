@@ -53,14 +53,34 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="post">
-                        <label for="in">Email</label>
-                        <br>
-                        <input type="email" placeholder="xyz@abc.com">
-                        <br>
-                        <label for="pass">Password</label>
-                        <br>
-                        <input type="password">
+                    <div class="row-content">
+                    <div class="form-group row">
+                        <label for="numberofguest" class="col-md-12 text-center col-form-label"><h5>Email Id</h5></label>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-4 col-4 col-md-4 text-center">
+                           <input type="text" placeholder="abc@xyz.com" class="form-control" id="emid" name="emailId">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-group rows">
+                        <label for="pass" class="col-md-12 text-center col-form-label"><h5>Password</h5></label>
+                        </div>
+                        <div class="form-group row">
+                        <div class="offset-4 col-4 col-md-4 text-center">
+                            <input type="password" class="form-control" id="password" name="pass" placeholder="Password" >
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-1 col-md-10 ">
+                                <input type="checkbox">  Remember Me
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class=" col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary">LOGIN IN</button>
+                            </div>
+                        </div>
                     </form>
 
                 </div>
@@ -154,7 +174,7 @@
                                 <input type="radio" class="form-label" id="numberofguest" name="numberofguest"> 6
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group rows">
                             <label for="Date" class="col-md-3 col-form-label"><h5>Date and time </h5></label>
                             <div class="col-5 col-md-4">
                                 <input type="number" class="form-control" id="date" name="date" placeholder="Date">
