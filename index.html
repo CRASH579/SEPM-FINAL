@@ -37,7 +37,7 @@
                                 class="fa fa-address-book fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text login-mo">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="logmod">
                         <span class="fa fa-sign-in"></span> Login
 
                     </a>
@@ -46,6 +46,46 @@
         </div>
 
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="loginModal" class="modal fade" role="dailog">
 
@@ -99,6 +139,30 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <header class="jumbotron">
         <div class="container" style="margin-left: 30px;margin-right: 0px;">
 
@@ -112,13 +176,48 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
 
-                <div class="col-6 col-sm-2 order-last btn btn-warning align-self-center" role="button"
-                    data-toggle="modal" data-target="#reserve">RESERVE TABLE
+                <div class="col-6 col-sm-2 order-last btn btn-warning align-self-center" role="button" id="resbtn"
+                   >RESERVE TABLE
                 </div>
 
             </div>
         </div>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,6 +287,38 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -376,8 +507,9 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
         <script>
             $(document).ready(function () {
+                $('.carousel').carousel({interval: 6000});
                 $("#carouselButton").click(function(){
-                    $('.carousel').carousel({interval: 900});
+                   
 
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $(".carousel").carousel('pause');
@@ -390,6 +522,17 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+
+            $('#resbtn').click(function(){
+                $('#reserve').modal('show');
+            });
+
+            $('#logmod').click(function(){
+                $('#loginModal').modal('show');
+            });
+
+
+
             });
            
         </script>

@@ -69,3 +69,15 @@ body {
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
+
+.modal-body {
+    background: #D1C4E9;
+}
+
+.modal-header{
+ background:#512DA8;;
+
+}
+.close{
+    color:floralwhite;
+}
