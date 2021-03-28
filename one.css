@@ -26,7 +26,12 @@ background: #70418b;
     min-height:300px;
 }
 
-
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
